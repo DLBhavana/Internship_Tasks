@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhavana's Portfolio</title>
+    
+    <!-- CSS Code inside the <style> tag -->
     <style>
         /* Global Styles */
         body {
@@ -17,12 +19,11 @@
         /* Header Section */
         header {
             display: flex;
-            flex-direction: column; /* Stack header items vertically */
-            align-items: center; /* Center header items */
+            justify-content: space-between; /* Space between text and image */
+            align-items: center; /* Align text and image vertically */
             background-color: #333;
             color: white;
             padding: 50px 20px;
-            text-align: center;
         }
 
         header h1 {
@@ -40,8 +41,7 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            object-fit: cover;
-            margin-top: 20px; /* Add space between name and image */
+            object-fit: cover; /* Maintain image aspect ratio */
         }
 
         /* About Section */
@@ -180,18 +180,52 @@
 
     <!-- Header Section -->
     <header>
-        <h1>Bhavana</h1>
-        <p>Web Developer & Designer</p>
-        <!-- Image hosted on Google Drive -->
-        <img id="profile-image" src="https://drive.google.com/uc?export=view&id=1l7CwR3y8DmCn7rutrhm-Hbm72kCFt9G9" alt="Bhavana">
+        <div>
+            <h1>Bhavana</h1>
+            <p>Web Developer & Designer</p>
+        </div>
+        <img id="profile-image" src="image.jpg" alt="Bhavana">
     </header>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm Bhavana, a passionate web developer...</p>
+        <p>Hello! I'm Bhavana, a passionate web developer with expertise in HTML, CSS, and JavaScript. I create beautiful and responsive websites that help businesses grow. My goal is to keep learning and building innovative solutions for the web.</p>
     </section>
-    <!-- More sections here -->
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1: Portfolio Website</h3>
+            <p>A personal website to showcase my skills and projects.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Java - Purchasing medicines in online app</h3>
+            <p>An online website for purchasing medicines.</p>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p><a href="https://drive.google.com/file/d/1B4cXhhzDJOyZiq4LupchFVOQGXDHofiv/view?usp=drivesdk" target="_blank">Download My Resume</a></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:dlakshmibhavana@gmail.com">dlakshmibhavana@gmail.com</a></p>
+    </section>
 
 </body>
 </html>
